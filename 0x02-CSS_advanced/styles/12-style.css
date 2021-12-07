@@ -51,7 +51,7 @@ a {
 }
 
 .section-header{
-  align-items: var(--section-header-align);
+  text-align: var(--section-header-align);
 }
 .card-category{
   color: var(--color-primary);
@@ -59,7 +59,7 @@ a {
 
 .section-title {
   font-family: var(--font-family-title);
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-xx-large);
   font-weight: var(--font-weight-bold);
   margin: var(--section-title-margin);
   color: var(--section-title-color)
