@@ -47,9 +47,15 @@ a {
   display: none;
 }
 
-.section-header{
+.section-header {
   align-items: var(--section-header-align);
 }
-.card-category, .section-tagline {
+
+.section-tagline {
   color: var(--color-primary);
 }
+
+.card-category {
+  color: var(--color-primary);
+}
+
