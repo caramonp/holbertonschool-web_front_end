@@ -201,7 +201,7 @@ a:active {
   margin: var(--nav-item-margin);
 }
 
-.nav .nav-link:before {
+.nav .nav-link::before {
   content: empty;
   position: absolute;
   top: 0;
@@ -270,8 +270,8 @@ ul.row {
   display: block;
 }
 
-.social-link svg {
-  color: var(--text-color);
+.social-link > svg {
+  fill: var(--text-color);
 }
 
 .button {
