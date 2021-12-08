@@ -199,7 +199,7 @@ a:active {
   margin: var(--nav-item-margin);
 }
 
-.nav .nav-link:before {
+.nav .nav-link::before {
   content: "";
   position: absolute;
   top: 0;
