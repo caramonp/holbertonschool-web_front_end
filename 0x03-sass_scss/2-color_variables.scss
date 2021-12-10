@@ -1,0 +1,13 @@
+/* variable color*/
+$color_new : #3D3D3D;
+$background-color: #6D6D6D;
+
+body {
+  color: $color_new;
+  background-color: $background-color; }
+
+p {
+  color: $color_new; }
+
+h2 {
+  background-color: $background-color; }
