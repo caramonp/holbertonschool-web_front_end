@@ -661,37 +661,32 @@
     content: "";
   }
   
-  /*** FORM ***/
+ /*** FORM ***/
 /* Comment section
     ============================= */
-.post-comments{
+.post-comments {
   width: 80%;
   margin: 10rem 0 0 auto;
   padding-left: 7rem;
 }
-
-.post-comments .section-title{
-font-variant: small-caps;
+.post-comments .section-title {
+  font-variant: small-caps;
 }
-
 /* Basic form
     ============================= */
-
 form {
   display: flex;
   flex-direction: column;
   padding: 1rem 0;
   margin: 0;
 }
-
 fieldset {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: 0;
+  border: none;
   padding: 0 0 2rem;
 }
-
 label {
   cursor: pointer;
   display: block;
@@ -699,7 +694,6 @@ label {
   font-size: 1.4rem;
   padding: 0 0 .5rem;
 }
-
 input[type=text],
 input[type=email],
 textarea {
@@ -726,16 +720,13 @@ textarea:focus {
   font-style: italic;
   font-size: var(--font-size-small);
 }
-
 /* Form group
 ============================= */
-
 .form-group {
   padding: 1rem;
   margin: 0;
-  background-color: white;
+  background-color: var(--color-white);
 }
-
 .form-group:focus-within {
   background-color: var(--color-light-grey);
   transition: .3s;
@@ -764,10 +755,8 @@ textarea:focus {
   max-height: 20rem;
   margin: .4rem 0 0;
 }
-
 /* Form error handling
 ============================= */
-
 /* The following code is used to place the icon in the after pseudo element. Because after and before are not possible in an input, we need to use a span that will be positioned on the right of our input. */
 
 input:not(:placeholder-shown) ~ .form-field-icon::after {
@@ -816,7 +805,6 @@ textarea:valid:not(:placeholder-shown) {
   padding: .5rem 0;
   position: relative;
 }
-
 .form-search .search-button {
   display: inline-block;
   background: transparent;
@@ -824,34 +812,32 @@ textarea:valid:not(:placeholder-shown) {
   margin: 0;
   padding: 0;
 }
-
 .search-button .search-icon {
   fill: var(--color-white);
   width: 1.5rem;
   height: 1.5rem;
 }
-
-.form-search input {
-    display: inline-block;
-    color: var(--color-white);
-    padding-right: 2rem;
-    height: 3rem;
-    border: 0;
-    outline: none;
-    position: absolute;
-    width: 0;
-    right: 0;
-    background: none;
-    cursor: pointer;
-    z-index: 3;
-    transition: width .4s cubic-bezier(0, 0.795, 0, 1);
+.form-search input[type="search"] {
+  display: inline-block;
+  color: var(--color-white);
+  padding-right: 2rem;
+  height: 3rem;
+  border: 0;
+  outline: none;
+  position: absolute;
+  width: 0;
+  right: 0;
+  background: none;
+  cursor: pointer;
+  z-index: 3;
+  transition: width .4s cubic-bezier(0, 0.795, 0, 1);
 }
 .form-search input[type="search"]:focus {
-    position: relative;
-    width: 15rem;
-    z-index: 1;
-    border-bottom: .1rem solid var(--color-grey);
-    padding: 0;
-    cursor: text;
-    margin: 0 1rem;
+  position: relative;
+  width: 15rem;
+  z-index: 1;
+  border-bottom: .1rem solid var(--color-grey);
+  padding: 0;
+  cursor: text;
+  margin: 0 1rem;
 }
