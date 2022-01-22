@@ -5,4 +5,19 @@
 <ul>
   <li>0. Setup your dev environment</li>
   <p>The aswer is 0-index.html</p>
+
+  <li>1. Creating a DOM element</li>
+  <p>The aswer is 1-index.html</p>
+
+  <li>2. Creating multiple DOM elements at once</li>
+  <p>The aswer is 2-index.html</p>
+
+  <li>3. Chain DOM elements</li>
+  <p>The aswer is 3-index.html</p>
+
+  <li>4. HTML function</li>
+  <p>The aswer is 4-index.html</p>
+
+  <li>5. Click attribute and remove function</li>
+  <p>The aswer is 5-index.html</p>
 </ul>
