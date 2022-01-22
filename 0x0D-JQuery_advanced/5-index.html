@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 4</title>
+
+    </head>
+
+    <body>
+      <script
+        src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+        crossorigin="anonymous">
+      </script>
+
+      <script 
+      src="https://code.jquery.com/jquery-3.6.0.min.js" 
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+      crossorigin="anonymous">
+      </script>
+
+      <script type="application/javascript">
+        
+        const createFamilyTree = () => {
+
+          $("body").append(
+          "<table><thead><tr><th>Firtsname<th>Lastname<tbody>"
+        )
+        }
+
+        createFamilyTree()
+
+        const addNewMember = (firstName, lastName) => {
+          $("tbody").append(
+            `<tr>
+            <td>${firstName}</td>
+            <td>${lastName}</td>
+            <td class='delete'>(x)</td>`
+            )
+
+            $(".delete")
+            .css("background-color", "orange")
+            .click(function () {
+              $(this).parent("tr").remove()
+            })
+        }
+
+        addNewMember("Guillaume", "Salva")
+        addNewMember("Arielle", "Snizt")
+        addNewMember("Fanette", "Snizt")
+        addNewMember("Gerard", "Snizt")
+        addNewMember("Victor", "Salva")
+
+      </script>
+    </body>
+
+</html>
